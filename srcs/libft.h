@@ -38,11 +38,14 @@ int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
-void *memcpy(void *dest, const void *src, size_t n);
-void *memmove(void *dest, const void *src, size_t n);
+void	*memcpy(void *dest, const void *src, size_t n);
+void	*memmove(void *dest, const void *src, size_t n);
 size_t	strlcpy(char *dst, const char *src, size_t size); 
 size_t	strlcat(char *dst, const char *src, size_t size); 
-int toupper(int c);
-int tolower(int c);
+int		toupper(int c);
+int		tolower(int c);
+char	*strchr(const char *s, int c);
+char	*strrchr(const char *s, int c);
+int		strncmp(const char *s1, const char *s2, size_t n);
 
 #endif
