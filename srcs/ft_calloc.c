@@ -17,14 +17,21 @@
 */
 
 #include "libft.h"
+#include <stdlib.h>
+#include <limits.h>
 
 void	*ft_calloc(size_t nmemb, size_t size) {
 	if (nmemb == 0 || size == 0)
 		return NULL;
 
-	void	*mem = malloc(nmemb * size);
+	unsigned long long	total_size = (unsigned long long)nmemb * (unsigned long long)size; 
+	if (total_size > SIZE_MAX)
+		return NULL;
 
+	void	*mem = malloc((size_t)total_size);
 	if (!mem)
 		return NULL;
+
+	ft_bzero(mem, (size_t)total_size);
 	return mem;
 }
