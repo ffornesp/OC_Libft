@@ -22,14 +22,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len) {
 	if (start > slen)
 		return ft_strdup("");
 
-	size_t	size;
+	size_t	total_len;
 	if (slen - start >= len)
-		size = len;
+		total_len = len;
 	else
-		size = slen - start;
+		total_len = slen - start;
 
-	char	*str = ft_calloc(size + 1);
+	char	*str = ft_calloc(total_len + 1, sizeof(char));
 	if (!str)
 		return NULL;
-	return ft_memcpy(str, s + start, size);
+	return ft_memcpy(str, s + start, total_len);
 }
