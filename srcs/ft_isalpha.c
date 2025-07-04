@@ -7,6 +7,8 @@
 		there may be additional characters for which isalpha() is true-letters which
 		are neither upper case nor lower case.
 
+	RETURN VALUES:
+
 	The isalpha() function returns nonzero if the character c falls into the tested
 		class, and a zero value if not.
 */

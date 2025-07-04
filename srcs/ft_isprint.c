@@ -4,6 +4,8 @@
 
 	The isprint() function checks for any printable character including space.
 
+	RETURN VALUES:
+
 	The isprint() function returns nonzero if the character c falls into the tested
 		class, and a zero value if not.
 */

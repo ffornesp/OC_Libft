@@ -5,6 +5,8 @@
 	The isalnum() function checks for an alphanumeric character; it is equivalent to 
 		(isalpha(c) || isdigit(c)). 
 
+	RETURN VALUES:
+
 	The isalnum() function returns nonzero if the character c falls into the tested
 		class, and a zero value if not.
 */

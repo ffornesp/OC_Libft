@@ -5,6 +5,8 @@
 	The isascii() function checks whether c is a 7-bit unsigned char value that fits
 		into the ASCII character set. 
 
+	RETURN VALUES:
+
 	The isascii() function returns nonzero if the character c falls into the tested
 		class, and a zero value if not.
 */
