@@ -16,12 +16,14 @@
 char	*ft_strjoin(char const *s1, char const *s2) {
 	if (!s1 && !s2)
 		return ft_strdup("");
-	else if (!s1)
+	if (!s1)
 		return ft_strdup(s2);
-	else if (!s2)
+	if (!s2)
 		return ft_strdup(s1);
 
-	unsigned long long	total_len = (unsigned long long)ft_strlen(s1) + (unsigned long long)ft_strlen(s2);
+	size_t	len_s1 = ft_strlen(s1);
+	size_t	len_s2 = ft_strlen(s2);
+	unsigned long long	total_len = (unsigned long long)len_s1 + (unsigned long long)len_s2;
 	if (total_len > SIZE_MAX)
 		return NULL;
 
@@ -29,10 +31,7 @@ char	*ft_strjoin(char const *s1, char const *s2) {
 	if (!str)
 		return NULL;
 	
-	size_t	i = 0;
-	while (*s1)
-		str[i++] = *s1++;
-	while (*s2)
-		str[i++] = *s2++;
+	ft_strlcpy(str, s1, len_s1 + 1);
+	ft_strlcat(str, s2, (size_t)total_len + 1);
 	return str;
 }
