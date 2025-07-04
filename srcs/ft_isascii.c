@@ -11,15 +11,8 @@
 		class, and a zero value if not.
 */
 
-#ifndef _NULL
-#define _NULL	0
-#endif
-#ifndef _DEL
-#define _DEL	127
-#endif
-
 int	ft_isascii(int c) {
-	if (c >= _NULL && c <= _DEL)
+	if (c >= 0 && c <= 127)
 		return 1;
 	return 0;
 }
