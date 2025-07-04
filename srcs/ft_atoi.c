@@ -14,12 +14,6 @@
 #include "libft.h"
 #include <stdbool.h>
 
-static bool	ft_isspace(const char c) {
-	if (c == ' ' || (c >= 9 && c <= 13))
-		return true;
-	return false;
-}
-
 int	ft_atoi(const char *nptr) {
 	bool	negative = false;
 	int		res = 0;
