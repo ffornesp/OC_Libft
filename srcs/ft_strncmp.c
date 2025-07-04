@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-int strncmp(const char *s1, const char *s2, size_t n) {
+int ft_strncmp(const char *s1, const char *s2, size_t n) {
 	size_t	i = 0;
 	const unsigned char	*us1 = (const unsigned char *)s1;
 	const unsigned char	*us2 = (const unsigned char *)s2;

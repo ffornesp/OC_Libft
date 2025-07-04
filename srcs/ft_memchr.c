@@ -14,7 +14,7 @@
 
 #include "libft.h"
 
-void *memchr(const void *s, int c, size_t n) {
+void *ft_memchr(const void *s, int c, size_t n) {
 	const unsigned char	*us = (const unsigned char *)s;
 	const unsigned char	uc = (const unsigned char)c;
 
