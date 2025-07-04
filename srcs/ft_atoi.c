@@ -6,7 +6,7 @@
 		nptr to int. The behavior is the same as strtol(nptr, NULL, 10); except 
 		that atoi() does not detect errors. 
 
-	RETURN VALUES:
+	RETURN VALUE:
 
 	The converted value.
 */

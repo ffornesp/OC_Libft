@@ -5,7 +5,7 @@
 	The strlen() function calculates the length of the string s, excluding the terminating 
 	null byte (aq\0aq).
 
-	RETURN VALUES:
+	RETURN VALUE:
 
 	The strlen() function returns the number of bytes in the string s.
 */

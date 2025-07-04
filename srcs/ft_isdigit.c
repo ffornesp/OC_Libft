@@ -4,7 +4,7 @@
 
 	The isdigit() function checks for a digit (0 through 9).
 
-	RETURN VALUES:
+	RETURN VALUE:
 
 	The isdigit() function returns nonzero if the character c falls into the tested
 		class, and a zero value if not.

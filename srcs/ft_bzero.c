@@ -5,7 +5,7 @@
 	The bzero() function sets the first n bytes of the area starting at s to zero 
 		(bytes containing aq\0aq).
 
-	RETURN VALUES:
+	RETURN VALUE:
 
 	The bzero() function doesn't return anything.
 */

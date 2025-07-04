@@ -7,7 +7,7 @@
 		are	first copied into a temporary array that does not overlap src or dest, and
 		the bytes are then copied from the temporary array to dest.
 
-	RETURN VALUES:
+	RETURN VALUE:
 
 	The memmove() function returns a pointer to dest.
 */

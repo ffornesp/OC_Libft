@@ -6,7 +6,7 @@
 		The memory areas must not overlap. Use memmove(3) if the memory areas do 
 		overlap.
 
-	RETURN VALUES:
+	RETURN VALUE:
 
 	The memcpy() function returns a pointer to dest.
 */

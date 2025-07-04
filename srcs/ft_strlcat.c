@@ -16,7 +16,7 @@
 	The strlcat() function appends the NUL-terminated string src to the end of dst. 
 		It will append at most size - strlen(dst) - 1 bytes, NUL-terminating the result. 
 
-	RETURN VALUES:
+	RETURN VALUE:
 
 	The strlcpy() and strlcat() functions return the total length of the string they 
 		tried to create. For strlcpy() that means the length of src. For strlcat() 

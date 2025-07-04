@@ -8,7 +8,7 @@
 		strnstr() function is a FreeBSD specific API, it should only be used when 
 		portability is not a concern.
 
-	RETURN VALUES:
+	RETURN VALUE:
 
 	If little is an empty string, big is returned; if little occurs nowhere in big, NULL
 		is returned; otherwise a pointer to	the first character of the first occurrence 

@@ -16,7 +16,7 @@
 	The strlcpy() function copies up to size - 1 characters from the NUL-terminated 
 		string src to dst, NUL-terminating the result.
 
-	RETURN VALUES:
+	RETURN VALUE:
 
 	The strlcpy() and strlcat() functions return the total length of the string they 
 		tried to create. For strlcpy() that means the length of src. For strlcat() 
