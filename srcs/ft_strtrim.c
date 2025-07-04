@@ -19,14 +19,14 @@ char	*ft_strtrim(char const *s1, char const *set) {
 	if (!set || *set == '\0')
 		return ft_strdup(s1);
 
+	size_t	len = ft_strlen(s1);
 	size_t	start = 0;
-	size_t	end = ft_strlen(s1) - 1;
-	while (ft_strchr(set, s1[start]) && s[start])
+	while (ft_strchr(set, s1[start]) && s1[start])
 		start++;
-	while (ft_strchr(set, s1[end]) && end >= 0)
-		end--;
-	size_t	len = end - start + 1;
-	if (len <= 0)
+	if (start == len)
 		return ft_strdup("");
-	return ft_substr(s1, start, len);
+	size_t	end = len - 1;
+	while (ft_strchr(set, s1[end]) && end > start)
+		end--;
+	return ft_substr(s1, start, end - start + 1);
 }
