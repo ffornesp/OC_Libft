@@ -14,6 +14,27 @@
 
 #include "libft.h"
 
-char	**ft_split(char const *s, char c) {
+size_t	calculate_size(char const *s, const char c) {
+	while (*s == c)
+		s++;
 	
+}
+
+char	**ft_split(char const *s, char c) {
+	if (!s)
+		return NULL;
+
+	size_t	size = 1;
+
+	if (c) {
+
+
+	char	**out = ft_calloc(sizeof(char *) * (size + 1));
+	if (!out)
+		return NULL;
+	
+	if (!c)
+		*out = s;
+
+	return out;
 }
